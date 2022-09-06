@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>Create an Account</h2>
+    <form action="#" method="post">
+        <label for="first_name">First Name</label>
+        <input type="text" id="first_name" name="name" required>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" required>
+
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <p>We'll never share your email with anyone else.</p>
+
+        <label for="male">Male</label>
+        <input id="genus" type="radio" name="genus" value="Male" required>
+        <label for="male">Female</label>
+        <input id="male" type="radio" name="genus" value="Female">
+
+        <div>
+            <label for="country">Country</label>
+            <select name="country" id="country" name="country" required>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Germany">Germany</option>
+                <option value="USA">USA</option>
+                <option value="Spain">Spain</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="France">France</option>
+            </select>
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+        </div>
+
+        <button type="submit">Sign Up</button>
+
+        <p>By clicking the 'Sign Up' button, you confirm that you accept our</p>
+        <p><a href="#" target="_blank">Terms of Use</a> and <a href="#" target="_blank">Privacy Policy</a></p>
+        <span><b>Have an account?</b></span> <b><a href="#">Log In</a></b>
+    </form>
+
+    <h2>Profile</h2>
+    <form action="#" method="post">
+        <img src="./avatar.png" alt="avatar">
+
+        <label for="avatar"></label>
+        <input type="file" id="avatar" name="avatar" enctype="multipart/form-data" accept="image/*" required>
+        <button type="reset">Reset</button>
+        <p>Up to 1 MB (300x300 px)</p>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="update_email">E-mail</label>
+        <input type="email" id="update_email" name="update_email" required>
+
+        <div>
+            <label for="update_country">Country</label>
+            <select name="update_country" id="update_country" name="update_country" required>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Germany">Germany</option>
+                <option value="USA">USA</option>
+                <option value="Spain">Spain</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="France">France</option>
+            </select>
+
+            <label for="update_city">City</label>
+            <input type="text" id="update_city" name="update_city" required>
+        </div>
+
+        <label for="zip_code">Zip Code</label>
+        <input type="text" id="zip_code" name="zip_code" required>
+
+        <label for="tel">Phone Number</label>
+        <input type="tel" id="tel" required>
+
+        <div>
+            <button type="submit">Update</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
