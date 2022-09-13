@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;  
+}
+
+body {
+    font-family: "open sans";
+    margin-left:auto;
+    margin-right: auto;
+    font-size: 18px;
+    color: #070707;
+}
+
+a {
+    text-decoration: none;
+    color: #070707
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    line-height: 139%;
+}
+
+header {
+    display: block; 
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 496px;
+    margin: 25px auto;
+    text-align: center;
+    justify-content: space-between;
+} 
+
+.navigation a {
+    color: #828282;
+    line-height: 139%;
+    letter-spacing: 0.02em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navigation li a:hover {
+    color: #070707;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 135%;
+}
+
+.denis_img {
+    display: block;
+    margin-top: 50px;
+}
+
+.denis_novik {
+    display: block;
+    max-width: 970px;
+    margin: 0 auto;
+    margin-top: 12px;
+}
+
+#about_me {
+    background-color: #F6F6F6;
+}
+
+.about_me {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 136%;
+}
+
+.about_me p {
+    text-align: center;
+}
+
+.designer_from_minsk {
+    margin-top: 50px;
+}
+
+.about_me p:nth-child(4) {
+    max-width: 406px;
+    margin: 30px auto 0 auto;
+}
+
+.about_me p:last-child {
+    max-width: 321px;
+    margin: 30px auto 0 auto;
+}
+
+.skills {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.work_in {
+    margin-top: 20px;
+    text-align: center;;
+}
+
+.programs {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.program {
+    max-width: 170px;
+    text-align: center;
+}
+
+.program div {
+    margin: 25px auto 60px auto;
+}
+
+.program .stars {
+    margin: 0;
+}
+
+.program .figma {
+    margin-top: 80px;
+}
+
+.program p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #828282;
+    line-height: 135,7%;
+    letter-spacing: 0.02em;
+}
+
+#portfolio {
+    background-color: #F6F6F6;
+}
+
+.portfolio {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.web_store_link {
+    max-width: 260px;
+    margin: 40px auto 70px auto;
+    text-align: center;
+}
+
+.web_store_link:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.web_store_link a {
+    text-decoration: underline;
+    line-height: 138,8%;
+}
+        
+.portfolio_title {
+    margin-bottom: 50px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.welcome {
+    max-width: 280px;
+    margin: 20px auto 60px auto;
+    text-align: center;
+    line-height: 138,8%;
+}
+
+.button {
+    border: none;
+    border-radius: 22px;
+    padding: 10px 16px;
+    background-color: #070707;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 138,8%;
+}
+
+.social_icons {
+    display: flex;
+    justify-content: space-between;  
+    max-width: 310px;
+    margin: 30px auto 0 auto;
+}
+
+.social_links {
+    max-width: 200px;
+    margin: 60px auto 0 auto;
+    font-size: 14px;
+    line-height: 136,2%;
+    color: #828282;
+}
+
+.social_links a {
+    color: #828282;
+}
