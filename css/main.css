@@ -1,6 +1,7 @@
 * {
     margin: 0;
-    padding: 0;  
+    padding: 0;
+    box-sizing: border-box; 
 }
 
 body {
@@ -68,14 +69,18 @@ h1 {
     margin-top: 12px;
 }
 
+.section {
+    padding: 100px 0;
+}
+
 #about_me {
     background-color: #F6F6F6;
 }
 
-.about_me {
+.container {
     max-width: 970px;
     margin: 0 auto;
-    padding: 100px 0;
+    text-align: center;
 }
 
 h2 {
@@ -83,41 +88,31 @@ h2 {
     font-size: 34px;
     font-weight: 700;
     line-height: 136%;
+    color: #070707;
 }
 
-.about_me p {
-    text-align: center;
-}
-
-.designer_from_minsk {
+h2 + div {
     margin-top: 50px;
 }
 
-.about_me p:nth-child(4) {
+h2 + p {
+    margin-top: 20px;
+}
+
+.about_me p:nth-child(3) {
     max-width: 406px;
     margin: 30px auto 0 auto;
 }
 
-.about_me p:last-child {
+.about_me p:nth-child(4) {
     max-width: 321px;
     margin: 30px auto 0 auto;
 }
 
-.skills {
-    max-width: 970px;
-    margin: 0 auto;
-    padding: 100px 0;
-}
-
-.work_in {
-    margin-top: 20px;
-    text-align: center;;
-}
-
 .programs {
     display: flex;
-    margin-top: 50px;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
 .program {
@@ -149,16 +144,9 @@ h2 {
     background-color: #F6F6F6;
 }
 
-.portfolio {
-    max-width: 970px;
-    margin: 0 auto;
-    padding: 100px 0;
-}
-
 .web_store_link {
     max-width: 260px;
     margin: 40px auto 70px auto;
-    text-align: center;
 }
 
 .web_store_link:nth-last-child(1) {
@@ -168,16 +156,6 @@ h2 {
 .web_store_link a {
     text-decoration: underline;
     line-height: 138,8%;
-}
-        
-.portfolio_title {
-    margin-bottom: 50px;
-}
-
-.container {
-    margin: 0 auto;
-    padding: 100px 0;
-    text-align: center;
 }
 
 .welcome {

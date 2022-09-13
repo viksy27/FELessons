@@ -12,13 +12,13 @@
 
 <body>
     <header id="home_page">
-        <ul class="navigation">
-            <li><a href="#home_page">Home</a></li>
-            <li><a href="#about_me">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-        </ul>
+            <ul class="navigation">
+                <li><a href="#home_page">Home</a></li>
+                <li><a href="#about_me">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
         <hr>
     </header>
 
@@ -28,20 +28,22 @@
             <img src="./img/denis_novik.jpg" class="denis_img" alt="Denis Novik">
         </section>
         
-        <section id="about_me">
-            <div class="about_me">
+        <section id="about_me" class="section">
+            <div class="container about_me">
                 <h2>About me</h2>
-                <p class="designer_from_minsk">Hi, I'm Denis – UX/UI designer from Minsk.</p>
-                <p>I'm interested in design and everything connected with it.</p>
+                <div>
+                    <p>Hi, I'm Denis – UX/UI designer from Minsk.</p>
+                    <p>I'm interested in design and everything connected with it.</p>
+                </div>
                 <p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
                 <p>Ready to implement excellent projects
                 with wonderful people.</p>
             </div>
         </section>
-        <section id="skills">
-            <div class="skills">
+        <section id="skills" class="section">
+            <div class="container">
                 <h2>Skills</h2>
-                <p class="work_in">I work in such programs as</p>
+                <p>I work in such programs as</p>
                 <div class="programs">
                     <div class="program">
                         <img src="./icons/ps.svg" alt="Photoshop icon">
@@ -105,14 +107,15 @@
             </div>
         </section>
 
-        <section id="portfolio">
-            <div class="portfolio">
-                <h2 class="portfolio_title">Portfolio</h2>
-
-                <a href="https://www.thefashion-store.com/">
-                    <img src="./img/fashion_store.jpg" alt="Fashion Store webcite"
-                    title="Online fashion store - Homepage">
-                </a>
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <div>
+                    <a href="https://www.thefashion-store.com/">
+                        <img src="./img/fashion_store.jpg" alt="Fashion Store webcite" title="Online fashion store - Homepage">
+                    </a>
+                </div>
+                
                 <p class="web_store_link"><a href="https://www.thefashion-store.com/">Online fashion store - Homepage</a></p>
 
                 <a href="https://www.reebok.com/us">
@@ -129,7 +132,7 @@
         </section>
     </main>
 
-    <footer id="contacts">
+    <footer id="contacts" class="section">
         <div class="container">
             <h2>Contacts</h2>
             <p class="welcome">Want to know more or just chat?
