@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "roboto";
+    background-color: #3B3F45;
+}
+
+header {
+    padding: 19px 12px;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #FF8984;
+    background-color: #4A4F56;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.container {
+    max-width: 534px;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #88839E;
+}
+
+label {
+    display: block;
+    padding: 12px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+label:hover {
+    background-color: #625E77;
+    border-top: 3px solid #fff ;
+    border-bottom: 3px solid #fff;
+}
+
+.box:nth-child(even) {
+    background-color: #7A7593;
+}
+
+input[type="checkbox"] {
+    margin-right: 12px;
+}
+
+button {
+    display: block;
+    padding: 12px 215px;
+    font-size: 18px;
+    border: none;
+    color: #FF8984;
+    background-color: #4A4F56;
+    margin: 45px auto;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #FF8984;
+    color: #000
+}
