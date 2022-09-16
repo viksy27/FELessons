@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #2F281E;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 17px auto;
+}
+
+ul {
+    display: flex;
+    max-width: 352px;
+}
+
+a:hover {
+    color: #FF9900;
+}
+
+li:not(:last-child) {
+    margin-right: 20px;
+}
+
+button {
+    font-family: "Poppins";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    max-width: 180px;
+    color: #fff;
+    border: none;
+    background-color: #FF9900;
+    padding: 13px 0;
+}
+
+.sign {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.sign_in {
+    padding: 13px 26px;
+    background-color: transparent;
+    border: 1px solid #BCD0E5;
+    color: #2F281E;
+}
+
+.sign_up {
+    padding: 13px 23px;
+    margin-left: 32px;
+    border: none;
+}
+
+.section {
+    max-width: 1200px;
+    margin: 0 auto 100px auto;
+    display: flex;
+}
+
+.tutorials {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.superpowers {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1, h2, h5 {
+    font-weight: 700;
+    color: #2F281E;
+}
+
+h1 {
+    font-size: 44px;
+    line-height: 54px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #544837;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+h1 + p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.center_title {
+    max-width: 539px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+
+.tools {
+    flex-direction: column;
+    max-width: 1440px;
+    background-image: url(./image/bg.png);
+    background-repeat: no-repeat; 
+    background-position: bottom; 
+}
+
+.flex_container {
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.flex_container div:nth-child(n+1) {
+    max-width: 270px;
+}
+
+.flex_container div:not(:last-child) {
+    margin-right: 40px;
+}
+
+h5 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    margin: 30px 0 16px 0;
+}
+
+.now_btn {
+    max-width: none;
+    margin: 0 auto 74px auto;
+    padding: 13px 40px ;
+}
