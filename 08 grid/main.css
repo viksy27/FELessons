@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Delius Unicase';
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 80px ;
+}
+
+p {
+    font-family: 'Roboto';
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500;
+    color: #fff;
+}
+
+p:nth-child(2) {
+    font-weight: 400;
+    color: #E0E0E0;
+}
+
+section {
+    max-width: 1170px;
+    margin: 120px auto 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(3, 370px);
+    grid-template-areas: 
+    "narrow1 wide1 wide1"     
+    "wide3 wide3 narrow4"
+    "narrow5 wide6 wide6";
+}
+
+.city1 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/city1.png);
+    grid-area: narrow1; 
+}
+
+.city1:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/city1.png);
+}
+
+.city2 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/city2.png);
+    grid-area: wide1;
+}
+
+.city2:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/city2.png);
+}
+
+.city3 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/city3.png);
+    grid-area: wide3;
+}
+
+.city3:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/city3.png);
+}
+
+.city4 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/city4.png);
+    grid-area: narrow4;
+} 
+
+.city4:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/city4.png);
+}
+
+.city5 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/city5.png);
+    grid-area: narrow5;
+}
+
+.city5:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/city5.png);
+}
+
+.city6 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/city6.png);
+    grid-area: wide6;
+}
+
+.city6:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/city6.png);
+}
+
+.grid-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px; 
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(224, 224, 224, 0.5);
+    cursor: pointer;
+}
+
+.icons {
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-card:hover .icons {
+    visibility: visible;
+}
+
+button:hover {
+    background-color: #E0E0E0;
+}
+
+.grid-container-2 {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(4, 370px);
+    grid-template-areas: 
+    "narrow1 wide1 wide1"     
+    "wide2 wide2 narrow2"
+    "wide2 wide2 narrow2"
+    "wide3 wide3 narrow3";
+}
+
+.nature1 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/nature1.png);
+    grid-area: narrow1;
+}
+
+.nature1:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/nature1.png);
+}
+
+.nature2 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/nature2.png);
+    grid-area: wide1;
+}
+
+.nature2:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/nature2.png);
+}
+
+.nature3 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/nature3.png);
+    grid-area: wide2;
+}
+
+.nature3:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/nature3.png);
+}
+
+.nature4 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/nature4.png);
+    grid-area: narrow2;
+}
+
+.nature4:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/nature4.png);
+}
+
+.nature5 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/nature5.png);
+    grid-area: wide3;
+}
+
+.nature5:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/nature5.png);
+}
+
+.nature6 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/nature6.png);
+    grid-area: narrow3;
+}
+
+.nature6:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/nature6.png);
+}
+
+.grid-container-3 {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(5, 370px);
+    grid-template-areas: 
+    "lil1 long1 lil2"     
+    "lil3 long1 long2"
+    "long3 lil4 long2"
+    "long3 wide1 wide1"
+    "wide2 wide2 lil5";
+    margin-bottom: 120px;
+}
+
+.human1 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/human1.png);
+    grid-area: lil1;
+}
+
+.human1:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/human1.png);
+}
+
+.human2 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/human2.png);
+    grid-area: long1;
+}
+
+.human2:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/human2.png);
+}
+
+.human3 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/human3.png);
+    grid-area: lil2;
+}
+
+.human3:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/human3.png);
+}
+
+.human4 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/human4.png);
+    grid-area: lil3;
+}
+
+.human4:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/human4.png);
+}
+
+.human5 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/human5.png);
+    grid-area: long2;
+}
+
+.human5:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/human5.png);
+}
+
+.human6 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/human6.png);
+    grid-area: long3;
+}
+
+.human6:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/human6.png);
+}
+
+.human7 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/human7.png);
+    grid-area: lil4;
+}
+
+.human7:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/human7.png);
+}
+
+.human8 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/human8.png);
+    grid-area: wide1;
+}
+
+.human8:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/human8.png);
+}
+
+.human9 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/human9.png);
+    grid-area: wide2;
+}
+
+.human9:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/human9.png);
+}
+
+.human10 {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./images/human10.png);
+    grid-area: lil5;
+}
+
+.human10:hover {
+    background-image: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%), url(./images/human10.png);
+}
