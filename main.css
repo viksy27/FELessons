@@ -25,9 +25,9 @@ ul {
     max-width: 500px;
     margin: 100px auto;
     border-radius: 5px;
-    background-color: rgb(21, 63, 40);
+    background-color: rgb(34, 2, 58);
 }
 
 li:hover {
-    background-color: rgb(15, 26, 19);
+    background-color: rgb(9, 2, 14);
 }
