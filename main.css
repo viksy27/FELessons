@@ -5,12 +5,14 @@
 }
 
 body {
-    background-color: rgb(15, 26, 19);
+    background-color: rgb(9, 2, 14);
 }
 
 a {
+    display: block;
+    width: 100%;
     font-family: "open sans";
-    font-size: 12px;
+    font-size: 18px;
     color: #fff;
     text-decoration: none;
 }

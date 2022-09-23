@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    padding: 15px;
+}
+
 h2 {
     font-family: 'Delius Unicase';
     font-size: 36px;
@@ -27,7 +31,7 @@ p:nth-child(2) {
 
 section {
     max-width: 1170px;
-    margin: 120px auto 0 auto;
+    margin: 105px auto 0 auto;
 }
 
 .grid-container {
@@ -35,6 +39,7 @@ section {
     gap: 30px;
     grid-template-columns: repeat(3, 370px);
     grid-template-rows: repeat(3, 370px);
+    grid-auto-rows: 370px;
     grid-template-areas: 
     "narrow1 wide1 wide1"     
     "wide3 wide3 narrow4"
@@ -136,6 +141,7 @@ button:hover {
     gap: 30px;
     grid-template-columns: repeat(3, 370px);
     grid-template-rows: repeat(4, 370px);
+    grid-auto-rows: 370px;
     grid-template-areas: 
     "narrow1 wide1 wide1"     
     "wide2 wide2 narrow2"
@@ -202,13 +208,14 @@ button:hover {
     gap: 30px;
     grid-template-columns: repeat(3, 370px);
     grid-template-rows: repeat(5, 370px);
+    grid-auto-rows: 370px;
     grid-template-areas: 
     "lil1 long1 lil2"     
     "lil3 long1 long2"
     "long3 lil4 long2"
     "long3 wide1 wide1"
     "wide2 wide2 lil5";
-    margin-bottom: 120px;
+    margin-bottom: 105px;
 }
 
 .human1 {
