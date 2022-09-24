@@ -9,17 +9,25 @@ html {
     line-height: 10px;
 }
 
-body {
-    font-family: "PT Sans", sans-serif;
-    color: #000;
+:root {
+    --black: #000;
+    --gray: #BDBDBD;
+    --white: #fff;
 }
 
-.header {
+body {
+    font-family: "PT Sans", sans-serif;
+    color: var(--black);
+    /* position: relative; */
+}
+
+.header__container {
     margin: 13px auto;
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* position: fixed; */
 }
 
 .header__language {
@@ -29,7 +37,7 @@ body {
     font-size: 2.2rem;
     line-height: 1.8rem;
     letter-spacing: 0.04em;
-    background-color: #fff;
+    background-color: var(--white);
     margin-right: 50px;
     cursor: pointer;
 }
@@ -41,7 +49,7 @@ body {
 }
 
 .header__link {
-    color: #000;
+    color: var(--black);
     text-decoration: none;
 }
 
@@ -50,21 +58,68 @@ body {
     margin-left: 10px;
 }
 
-.main {
+.main__container {
     max-width: 1200px;
+    max-height: 100%;
     margin: 73px auto 90px auto;
+    display: flex;
+    /* justify-content: space-between; */
+    /* background-color: rgb(168, 106, 106); */
 }
 
-.container {
-    margin: 70px 0 0 0;
+.aside {
+    max-width: 32%;
+    padding-top: 10px;
+}
+
+.aside__link {
+    display: block;
+    border-bottom: 1px solid var(--gray);
+}
+
+.aside__link + .aside__link {
+    margin-top: 70px;
+}
+
+.aside__link--color {
+    color: var(--black);
+}
+
+.aside__link--decoration {
+    text-decoration: none;
+}
+
+.content {
+    max-width: 68%;
+    margin-left: 30px;
 }
 
 .title {
     font-family: "Francois One", sans-serif;
     font-size: 3.6rem;
     line-height: 4.8rem;
+    font-weight: 400;
     text-transform: uppercase; 
     letter-spacing: 0.04em;
+}
+
+.title__pb-9 {
+    padding-bottom: 9px;
+}
+
+.title__before {
+    padding-top: 28px;
+    position: relative;
+}
+
+.title__line::before {
+    content: " ";
+    height: 8px;
+    width: 100px;
+    background-color: var(--black);
+    top: 0;
+    left: 0;
+    position: absolute;
 }
 
 .title__sup {
@@ -77,11 +132,16 @@ body {
 } 
 
 .main__text {
+    max-width: 785px;
     font-size: 2.8rem;
     line-height: 4.8rem;
-    margin: 70px 0 70px 0;
+    margin: 40px 0 70px 0;
 }
 
 .text__bg {
-    background-color: #c5c5c5;
+    background-color: var(--gray);
+}
+
+.main__text--mb-0 {
+    margin-bottom: 0;
 }
