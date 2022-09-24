@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    line-height: 10px;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    color: #000;
+}
+
+.header {
+    margin: 13px auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__language {
+    border: none;
+    font-family: "Tourney", sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.04em;
+    background-color: #fff;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.nav {
+    font-family: "Staatliches", sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: 0.03em;
+}
+
+.header__link {
+    color: #000;
+    text-decoration: none;
+}
+
+.header__slash {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 73px auto 90px auto;
+}
+
+.container {
+    margin: 70px 0 0 0;
+}
+
+.title {
+    font-family: "Francois One", sans-serif;
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    text-transform: uppercase; 
+    letter-spacing: 0.04em;
+}
+
+.title__sup {
+    font-family: "Farro", sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 3rem;
+    letter-spacing: 0.04em;
+    text-transform: none;
+}
+
+.main__text {
+    font-size: 2.8rem;
+    line-height: 4.8rem;
+    margin: 70px 0 70px 0;
+}
+
+.text__bg {
+    background-color: #c5c5c5;
+}
