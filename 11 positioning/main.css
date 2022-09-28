@@ -12,13 +12,20 @@ html {
 :root {
     --black: #000;
     --gray: #BDBDBD;
+    --darkgray: #545454;
     --white: #fff;
 }
 
 body {
     font-family: "PT Sans", sans-serif;
     color: var(--black);
-    /* position: relative; */
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top:0;
+    background-color: var(--white);
 }
 
 .header__container {
@@ -27,7 +34,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: fixed; */
 }
 
 .header__language {
@@ -53,6 +59,10 @@ body {
     text-decoration: none;
 }
 
+.header__link:hover {
+    color: var(--darkgray)
+}
+
 .header__slash {
     margin-right: 10px;
     margin-left: 10px;
@@ -60,16 +70,18 @@ body {
 
 .main__container {
     max-width: 1200px;
-    max-height: 100%;
-    margin: 73px auto 90px auto;
+    margin: 83px auto 90px auto;
     display: flex;
-    /* justify-content: space-between; */
-    /* background-color: rgb(168, 106, 106); */
 }
 
 .aside {
-    max-width: 32%;
-    padding-top: 10px;
+    max-width: 33%;
+}
+
+.aside__sticky {
+    max-width: 100%;
+    position: sticky; 
+    top: 100px;
 }
 
 .aside__link {
@@ -85,6 +97,10 @@ body {
     color: var(--black);
 }
 
+.aside__link:hover {
+    color: var(--darkgray)
+}
+
 .aside__link--decoration {
     text-decoration: none;
 }
@@ -94,6 +110,12 @@ body {
     margin-left: 30px;
 }
 
+.content__bg {
+    position: fixed;
+    z-index: -10;
+    right: 0;
+}
+
 .title {
     font-family: "Francois One", sans-serif;
     font-size: 3.6rem;
@@ -101,6 +123,7 @@ body {
     font-weight: 400;
     text-transform: uppercase; 
     letter-spacing: 0.04em;
+    z-index: -10;
 }
 
 .title__pb-9 {
@@ -129,6 +152,8 @@ body {
     line-height: 3rem;
     letter-spacing: 0.04em;
     text-transform: none;
+    position: absolute;
+    top: 20px;
 } 
 
 .main__text {

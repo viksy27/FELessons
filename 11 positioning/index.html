@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Staatliches&family=Tourney:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <title>Positioning</title>
+    <title>Positioning 2</title>
 </head>
 <body>
     <header class="header">
@@ -27,25 +27,30 @@
     
     <main class="main">
         <div class="main__container">
-            <aside class="aside aside__sticky">
-                <a href="#introduction" 
-                class="aside__link aside__link--color aside__link--decoration title">
-                    Introduction
-                </a>
-                <a href="#components" class="aside__link aside__link--color aside__link--decoration title">
-                    Core components
-                </a>
-                <a href="#fundamentals" class="aside__link aside__link--color aside__link--decoration title">
-                    React fundamentals
-                </a>
-                <a href="#handling" class="aside__link aside__link--color aside__link--decoration title">
-                    Handling text input
-                </a>
+            <aside class="aside">
+                <div class="aside__sticky">
+                    <a href="#introduction" 
+                    class="aside__link aside__link--color aside__link--decoration title">
+                        Introduction
+                    </a>
+                    <a href="#components" class="aside__link aside__link--color aside__link--decoration title">
+                        Core components
+                    </a>
+                    <a href="#fundamentals" class="aside__link aside__link--color aside__link--decoration title">
+                        React fundamentals
+                    </a>
+                    <a href="#handling" class="aside__link aside__link--color aside__link--decoration title">
+                        Handling text input
+                    </a>
+                </div>
             </aside>
     
             <div class="content">
+                <div class="content__bg">
+                    <img src="./img/bg.svg" alt="Gear">
+                </div>
                 <div class="content__box">
-                    <h2 class="title title__line title__before" id="introduction">Introduction <sup class="title__sup">Chapter 1</sup></h2>
+                    <h2 class="title title__line title__before" id="introduction">Introduction <span class="title__sup">Chapter 1</span></h2>
     
                     <p class="main__text">
                         Welcome to the very start of your React Native journey! If you're looking for environment setup instructions, they've moved to <u>their own section</u>. Continue reading for an introduction to the documentation, Native Components, React, and more!
@@ -53,14 +58,14 @@
                 </div>
                 
                 <div class="content__box">
-                    <h2 class="title title__line title__pb-9 title__before" id="components">Core components <sup class="title__sup">Chapter 2</sup></h2>
+                    <h2 class="title title__line title__pb-9 title__before" id="components">Core components <span class="title__sup">Chapter 2</span></h2>
                     
                     <p class="main__text">
                         React Native is an open source framework for building Android and iOS applications using React and the app platform’s native capabiles. With React Native, you use JavaScript to access your platform’s APIs as well as to describe the appearance and behavior of your UI using React components: <i>bundles of reusable, nestable code</i>. You can learn more about React in the next section. But first, let’s cover how components work in React Native.</p>
                 </div>
         
                 <div class="content__box">
-                    <h2 class="title title__line title__before" id="fundamentals">React fundamentals <sup class="title__sup">Chapter 2</sup></h2>
+                    <h2 class="title title__line title__before" id="fundamentals">React fundamentals <span class="title__sup">Chapter 3</span></h2>
             
                     <p class="main__text">
                         React Native runs on <u>React</u>, a popular open source library for building user interfaces with JavaScript. To make the most of React Native, it helps to understand React itself. This section can get you started or can serve as a refresher course.
@@ -86,7 +91,7 @@
                         <b>+ state. </b> While you can think of props as arguments you use to configure how components render, state is like a component’s personal data storage. State is useful for handling data that changes over time or that comes from user interaction. State gives your components memory!
                     </p>
         
-                    <h2 class="title title__line title__before" id="handling">Handling text input <sup class="title__sup">Chapter 4</sup></h2>
+                    <h2 class="title title__line title__before" id="handling">Handling text input <span class="title__sup">Chapter 4</span></h2>
                     
         
                     <p class="main__text">
