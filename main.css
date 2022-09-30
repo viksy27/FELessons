@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(9, 2, 14);
+    background-color: #000;
 }
 
 a {
@@ -31,5 +31,5 @@ ul {
 }
 
 li:hover {
-    background-color: rgb(9, 2, 14);
+    background-color: #000;
 }

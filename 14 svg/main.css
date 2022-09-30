@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    line-height: 10px;
+}
+
+:root {
+    --header-border: #EFEEF3;
+    --card-border: #E5EAF4;
+    --subtitle: #7690A8;
+    --text: #16133D;
+    --card-link: #3DB370;
+    --middle-blue: #B9DCFF;
+    --light-blue: #D1E7FF;
+    --lighten-blue: #E8F3FF;
+    --dark-blue: #007FFC;
+    --middle-green:#CAEFF2;
+    --light-green: #E1F4F5;
+    --lighten-green: #F4FEFF;
+    --dark-green: #52C29D;
+    --dark-gray: #0D0D0D;
+}
+
+.dark-blue {
+    fill: var(--dark-blue);
+}
+
+.middle-blue {
+    fill: var(--middle-blue);
+}
+
+.light-blue {
+    fill: var(--light-blue);
+}
+
+.lighten-blue {
+    fill: var(--lighten-blue);
+}
+
+.dark-gray {
+    fill: var(--dark-gray);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: var(--text);
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 23px;
+    border-bottom: 1px solid var(--header-border);
+}
+
+.main {
+    margin: 100px 0;
+}
+
+.main__subtitle {
+    margin-bottom: 15px;
+    line-height: 2.1rem;
+    color: var(--subtitle)
+}
+
+.main__title {
+    margin-bottom: 40px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 5.2rem;
+    letter-spacing: 0.2px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    padding: 40px;
+    max-width: 370px;
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+}
+
+.card:hover {
+    border-color: var(--card-link);
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.card:hover .middle-blue {
+    fill: var(--middle-green);
+    transition: all 1s ease;
+}
+
+.card:hover .light-blue {
+    fill: var(--light-green);
+    transition: all 1s ease;
+}
+
+.card:hover .lighten-blue {
+    fill: var(--lighten-green);
+    transition: all 1s ease;
+}
+
+.card:hover .dark-blue {
+    fill: var(--dark-green);
+    transition: all 1s ease;
+}
+
+.card__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    max-width: 64px;
+    min-height: 64px;
+    border: 1px solid rgba(21, 101, 216, 0.1);
+    border-radius: 16px;
+}
+
+.card__title {
+    margin-bottom: 15px;
+    font-size: 2.4rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.2px;
+}
+
+.card__subtitle {
+    max-width: 275px;
+    margin-bottom: 30px;
+    line-height: 2.8rem;
+}
+
+.card__link {
+    font-weight: 600;
+    line-height: 1.9rem;
+    text-decoration: none;
+    color: var(--card-link);
+}
+
+.card__link:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: var(--text);
+}
+
+.footer__container {
+    padding: 40px 0;
+}
+
+.footer__logo {
+    margin-bottom: 40px;
+}
+
+.footer__socials-container {
+    max-width: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__social {
+    min-width: 38px;
+    min-height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--header-border);
+}
+
+.footer__social:hover .dark-gray {
+    fill: var(--card-link);
+}
