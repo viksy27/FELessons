@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    line-height: 10px;
+}
+
+$dark-grey: #333;
+$middle-grey: #666;
+$light-grey: #898F8F;
+$grey: #ccc;
+$white: #fff;
+$gold: #FFCC00;
+
+@mixin alignment-flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin alignment-flex-space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin border-image {
+    position: absolute;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: $middle-grey;
+}
+
+.main__section {
+    max-width: 1170px;
+    margin: 122px auto;
+}
+
+.main__section__title-box {
+    max-width: 450px;
+    position: relative;
+    margin: 0 auto 40px;
+    @include alignment-flex-center();
+    border-bottom: 1px solid $gold;
+
+    &_subtitle {
+        font-family: 'Raleway';
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        color: $light-grey;
+        margin-bottom: 15px;
+    }
+
+    &_title {
+        font-family: 'Roboto';
+        font-weight: 900;
+        font-size: 6rem;
+        line-height: 6.6rem;
+        text-transform: uppercase;
+        color: $gold;
+        margin-bottom: 40px;
+    }
+
+    &_icon {
+        position: absolute;
+        top: 137px;
+        min-width: 30px;
+        text-align: center;
+        background-color: $white;
+    }
+}
+
+.profile {
+    @include alignment-flex-space-between;
+    min-height: 560px;
+
+    &__photo {
+        position: relative;
+        margin: 0 auto;
+        padding: 15px;
+        max-width: 430px;
+        max-height: 430px;
+
+        &_border-top--l {
+            @include border-image;
+            top: 0;
+            left: 0;
+            border-left: 1px solid $gold;
+            border-top: 1px solid $gold;
+        }
+
+        &_border-top--r {
+            @include border-image;
+            top: 0;
+            right: 0;
+            border-top: 1px solid $gold;
+            border-right: 1px solid $gold;
+        }
+
+        &_border-bottom--l {
+            @include border-image;
+            bottom: 0;
+            left: 0;
+            border-left: 1px solid $gold;
+            border-bottom: 1px solid $gold;
+        }
+
+        &_border-bottom--r {
+            @include border-image;
+            bottom: 0;
+            right: 0;
+            border-right: 1px solid $gold;
+            border-bottom: 1px solid $gold;
+        }
+    }
+
+    &__vl {
+        width: 1px;
+        height: 560px;
+        background-color: $gold;
+    }
+
+    &__info {
+        max-width: 430px;
+        @include alignment-flex-center;
+        margin: 0 auto;
+
+        &_title {
+            font-family: 'Roboto';
+            font-weight: 900;
+            font-size: 3.6rem;
+            line-height: 4.2rem;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            color: $middle-grey;
+        }
+
+        &_hr {
+            width: 100px;
+            height: 1px;
+            margin-bottom: 30px;
+            border: none;
+            background-color: $gold;
+
+        }
+
+        &_subtitle {
+            font-family: 'Raleway';
+            font-size: 2.4rem;
+            line-height: 3.6rem;
+            text-transform: capitalize;
+            color: $middle-grey;
+            margin-bottom: 30px;
+        }
+
+        &_social {
+
+            &_link {
+                display: inline-flex;
+                justify-content: center;
+                width: 30px;
+                padding: 7px 0;
+                margin-bottom: 50px;
+                border: 2px solid $grey;
+                background-color: #fff;
+                border-radius: 50%;
+                transition: all 0.5s ease;
+
+                & + & {
+                    margin-left: 5px;
+                }
+
+                &_icon {
+                    fill: $grey;
+                }   
+                
+                &:hover &_icon {
+                    fill: $gold;
+                }
+
+                &:hover {
+                    border-color: $gold;
+                }
+            }
+        } 
+
+        &_text {
+            font-family: 'Raleway';
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: $dark-grey;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        &__decor {
+            max-width: 90px;
+            margin-bottom: 25px;
+            @include alignment-flex-space-between;
+
+            &_line {
+                width: 10px;
+                height: 4px;
+                background-color: $gold;
+                
+                &:nth-last-child(2) {
+                    margin: 0 5px;
+                    width: 20px;
+                }
+            }
+        }   
+        
+        &_link {
+            font-family: 'Open Sans';
+            font-weight: 700;
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+            text-transform: uppercase;
+            color: $middle-grey;
+            text-decoration: none;
+            border: 1px solid $gold;
+            padding: 5px 10px;
+            transition: all 0.5s ease;
+
+            &:hover {
+                background-color: $gold;
+                color: $white;
+            }
+        }
+
+    }
+}
+
