@@ -1,0 +1,150 @@
+.posts {
+    @include container;
+
+    &__title_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        font-family: 'Red Hat Display';
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: $black;
+    }
+
+    .more {
+        &_link {
+            margin-right: 20px;
+            font-family: 'Lato';
+            font-size: 16px;
+            line-height: 166%;
+            letter-spacing: 0.1em;
+            color: $light-grey;
+        }
+
+        &_icon {
+            fill:$light-grey;
+        }
+
+        &:hover .more_link{
+            color: $black;
+        }
+
+        &:hover .more_icon {
+            fill: $black;
+        }
+    }
+
+    &__holder {
+        display: flex;
+        gap: 30px;
+
+        &_box {
+            max-width: 370px;
+        }
+    }
+
+    &__caption {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        font-size: 12px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: $light-grey;
+    }
+
+    &__picture_icon {
+        margin-bottom: 25px;
+    }
+
+    .description__heading--mb20 {
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 1280px) {
+        .posts__holder {
+            flex-direction: column;
+
+            &_box {
+                display: flex;
+                justify-content: space-evenly;
+                max-width: 100%;
+                gap: 20px;
+
+                &--reverse {
+                    flex-direction: row-reverse;
+                }
+            }
+        }
+
+        .posts__picture_icon {
+            width: 100%;
+        }
+
+        .posts__descriptoin {
+            max-width: 370px;
+        }
+    }
+        
+    @media (max-width: 768px) {
+        .posts__descriptoin {
+            max-width: 340px;
+        }
+
+        .posts__picture_icon {
+            max-width: 340px;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .posts {
+            @include container320;
+            margin-bottom: 70px;
+
+            &__holder {
+                gap: 50px;
+            }
+        }
+
+        .posts__holder_box {
+            flex-direction: column;
+            width: 100%;
+        }
+        
+        .posts__descriptoin {
+            min-width: 100%;
+        }
+
+        .posts__picture_icon {
+            max-width: 100%;            
+            margin-bottom: 25px;
+        }
+
+        .posts__caption {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .posts__title_container {
+            flex-direction: column;
+            align-items: start;
+            margin-bottom: 30px;
+        }
+
+        .posts__picture {
+            width: 100%;
+
+            &_icon {
+                width: 100%;
+            }
+        }
+    }
+}

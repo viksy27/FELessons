@@ -1,0 +1,55 @@
+ *,
+ ::after,
+ ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+ }
+
+@import '_variables';
+@import '_mixins';
+@import '_header';
+@import '_first-screen';
+@import '_blog';
+@import '_posts';
+@import '_popular';
+@import '_ui';
+@import '_footer';
+
+
+html, body {
+    font-size: 10px;
+    line-height: 10px;
+    color: $black;
+    min-width: 320px;
+    font-family: 'Lato', 'Red Hat Display', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+.block {
+    margin-bottom: 90px;
+
+    @media  (max-width: 992px) {
+        margin-bottom: 70px;
+    }
+}
+
+
+
+
+
+
+
+
