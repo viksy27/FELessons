@@ -1,0 +1,112 @@
+.footer {
+    padding: 70px 0 30px;
+    background-color: $lighter-grey;
+
+    &__container {
+        @include container;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        margin-bottom: 20px;
+
+        &_contacts {
+
+            &_link {
+                display: block;
+                font-family: 'Lato';
+                font-size: 16px;
+                line-height: 166%;
+                letter-spacing: 0.1em;
+                color: $black;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                &+& {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+
+    &_question {
+        margin-bottom: 30px;
+        font-family: 'Red Hat Display';
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: 0.05em;
+    }
+
+    &__socials {
+        display: inline-flex;
+        align-items: center;
+        gap: 23px;
+    }
+
+    &__socials_link {
+        border: 1px solid $grey;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+
+        &:hover {
+            background-color: $grey;
+        }
+
+        &:hover .footer__socials_icon {
+            fill: $white;
+        }
+    }
+
+    &__socials_icon {
+        fill: $grey;
+    }
+
+    &__copyright {
+        text-align: center;
+        font-family: 'Lato';
+        font-size: 12px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+    }
+}
+
+@media (min-width: 1441px) {
+    .footer {
+        @include container;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        &__inner {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__left {
+            margin-bottom: 40px;
+        }
+
+        &__socials {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .footer__copyright {
+        max-width: 240px;
+        margin: 0 auto;
+    }
+}
