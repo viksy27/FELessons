@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Create an Account</title>
+</head>
+<body class="body"> 
+    <div class="container">
+        <div class="container__wrapper">
+            <div class="form">
+                <h2 class="form_title">Create an Account</h2>
+                <form action="#" method="post">
+
+                    <div class="form__name  form--mb20">
+                        <div class="form__name_inner">
+                            <label class="form__name_label" for="first_name">First Name</label>
+                            <input class="form__name_input input" type="text" id="first_name" name="name" required>
+                        </div>                       
+                        <div class="form__name_inner">
+                            <label class="form__name_label" for="lastname">Last Name</label>
+                            <input class="form__name_input input" type="text" id="lastname" name="lastname" required>
+                        </div>                        
+                    </div>
+
+                    <div class="form__email form--mb20">
+                        <label class="form__name_label" for="email">E-mail</label>
+                        <input class="form__email_input input" type="email" id="email" name="email" required>
+                        <p class="form_text">
+                            We'll never share your email with anyone else.
+                        </p>
+                    </div>
+            
+                    <div class="form__radio form--mb20">
+                        <div class="form__radio_inner">
+                            <input class="form__radio_input" id="genus" type="radio" name="genus" value="Male" required>
+                            <label class="form__name_label" for="male">Male</label>
+                        </div>
+                        <div class="form__radio_inner">
+                            <input class="form__radio_input" id="male" type="radio" name="genus" value="Female" required>
+                            <label class="form__name_label" for="male">Female</label>
+                        </div>
+                    </div>                   
+                               
+                    <div class="form__location form--mb20">
+                        <div class="form__location_inner">
+                            <label class="form__name_label" for="country">Country</label>
+                            <select class="form__location_country input" name="country" id="country" name="country" required>
+                                <option value="">Select</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="Germany">Germany</option>
+                                <option value="USA">USA</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="France">France</option>
+                            </select>
+                        </div>            
+                        <div class="form__location_inner">
+                            <label class="form__name_label" for="city">City</label>
+                            <input class="input" type="text" id="city" name="city" required>
+                        </div>
+                    </div>
+            
+                    <button class="form__btn form--mb20" type="submit">Sign Up</button>
+                    
+                    <p class="form_text form_text--center">
+                        By clicking the 'Sign Up' button, you confirm that you accept our
+                    </p>
+                    <p class="form_text form_text--center form--mb20">
+                        <a class="form_text-link" href="#" target="_blank">
+                            Terms of Use
+                        </a> 
+                        and 
+                        <a class="form_text-link" href="#" target="_blank">
+                            Privacy Policy
+                        </a>
+                    </p>
+                    <hr class="form_hr form--mb20">
+                    <div class="form__footer">
+                        <span class="form__footer_text">
+                            Have an account?
+                        </span>
+                        <a class="form__footer_link" href="#">
+                            Log In
+                        </a>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="form">
+                <h2 class="form_title">Profile</h2>
+                <form action="#" method="post">
+
+                    <div class="form__ava form--mb20">
+                        <div class="form__ava_img">
+                            <img src="./avatar.png" alt="avatar">
+                        </div>                      
+                        <div class="form__ava_inner">
+                            <div class="form__ava__btns">
+                                <label for="avatar"></label>
+                                <input type="file" id="avatar" name="avatar" enctype="multipart/form-data" accept="image/*" required>                              
+                                <button class="form__ava__btns_trash" type="reset">
+                                    <svg class="form__ava__btns_trash-icon" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.00001 10.6667C1.00001 11.4 1.60001 12 2.33334 12H7.66668C8.40001 12 9.00001 11.4 9.00001 10.6667V2.66667H1.00001V10.6667V10.6667ZM9.66668 0.666667H7.33334L6.66668 0H3.33334L2.66668 0.666667H0.333344V2H9.66668V0.666667V0.666667Z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <span class="form__ava__btns_desc">
+                                Up to 1 MB (300x300 px)
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="form__profile form--mb20">
+                        <div class="form__name_inner">
+                            <label class="form__name_label" for="name">Name</label>
+                            <input class="form__profile__name_input input" type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form__name_inner">
+                            <label class="form__name_label" for="update_email">E-mail</label>
+                            <input class="form__profile-info_input input" type="email" id="update_email" name="update_email" required>
+                        </div>
+                    </div>
+            
+                    <div class="form__location form--mb20">
+                        <div class="form__location_inner">
+                            <label class="form__name_label" for="country">Country</label>
+                            <select class="form__location_country input" name="country" id="country" name="country" required>
+                                <option value="">Select</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="Germany">Germany</option>
+                                <option value="USA">USA</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="France">France</option>
+                            </select>
+                        </div>                    
+                        <div class="form__location_inner">
+                            <label class="form__name_label" for="city">City</label>
+                            <input class="input" type="text" id="city" name="city" required>
+                        </div>
+                    </div>
+
+                    <div class="form__profile form--mb20">
+                        <div class="form__name_inner">
+                            <label class="form__name_label" for="zip_code">Zip Code</label>
+                            <input class="input" type="text" id="zip_code" name="zip_code" required>
+                        </div>                       
+                        <div class="form__name_inner">
+                            <label class="form__name_label" for="tel">Phone Number</label>
+                            <input class="input" type="tel" id="tel" required>
+                        </div>
+                    </div>
+                    <button class="form__btn form__btn_update" type="submit">
+                        Update
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

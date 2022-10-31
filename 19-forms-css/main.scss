@@ -1,0 +1,340 @@
+@import '_variables';
+@import '_mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-size: 'Roboto', sans-serif;
+    background-color: $light-grey;
+}
+
+.container {
+    max-width: 81.25%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+}
+
+.input {
+    padding: 7px 8px;
+    border: 1px solid $input-border;
+    border-radius: 6px;
+    font-family: 'Inter';
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: $label-name;
+
+    &:focus {
+        border: 1px solid $blue;
+        outline: $blue;
+    }
+}   
+
+.input:required:valid {
+    border: 1px solid $blue;
+}
+
+.input:focus:required:invalid {
+    border: 1px solid $red;
+}
+
+.form {
+    width: 48.72%;
+    padding: 35px 35px 16px 35px;
+    border-radius: 6px;
+    background-color: $white;
+
+    &_title {
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: $title-black;
+        margin-bottom: 20px;
+    }
+    
+    &__name {
+        display: flex;
+        gap: 10px;
+
+        &_label {
+            font-family: 'Roboto';
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: -0.2px;
+            color: $label-name;
+            margin-bottom: 7px;
+        }
+    }
+
+    &__email_input {
+        border-radius: 6px;
+        margin-bottom: 7px;
+    }
+
+    &__name_inner {
+        @include row-half;
+    }
+
+    &--mb20 {
+        margin-bottom: 20px;
+    }
+
+    &__email {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_text {
+        font-family: 'Roboto';
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: -0.1px;
+        color: $text-grey;
+
+        &--center {
+            text-align: center;
+        }
+
+        &-link {
+            color: $blue;
+            font-family: 'Roboto';
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: -0.1px;
+            text-decoration: none;
+        }
+    }
+
+    &__radio {
+        display: flex;
+        gap: 20px;
+
+        &_input {
+            margin-right: 8px;
+        }
+    }
+
+    &__location {
+        display: flex;
+        gap: 10px;
+
+        &_inner {
+            @include row-half;
+        }
+
+        &_country {
+            cursor: pointer;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 6px;
+        background-color: $blue;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.1px;
+        color: $white;
+        cursor: pointer;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+
+        &:hover{
+            background-color: $white;
+            color: $blue;
+        }
+
+        &_update {
+            max-width: 150px;
+        }
+    }
+
+    &_hr {
+        background-color: $input-border;
+    }
+
+    &__footer {
+        margin: 0 auto;
+        max-width: 197px;
+
+        &_text {
+            margin-right: 20px;
+            font-family: 'Roboto';
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: -0.2px;
+            color: $label-name;
+        }
+
+        &_link {
+            font-family: 'Roboto';
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: -0.1px;
+            color: $blue;
+            text-decoration: none;
+        }
+    }
+
+
+//-------------------------RIGHT FORM-------------------------------------------//
+
+    &__ava {
+        display: flex;
+        gap: 20px;
+
+        &_inner {
+            padding-top: 7px;
+        }
+
+        &__btns {
+            display: flex;
+
+            &_trash {
+                border: 1px solid $input-border;
+                border-radius: 6px;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                -ms-border-radius: 6px;
+                -o-border-radius: 6px;
+                background-color: $white;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $blue;
+                }
+
+                &:hover .form__ava__btns_trash-icon {
+                    fill: $white;
+                }
+            }
+
+            &_trash-icon {
+                fill:$text-grey;
+                margin: 7px 7px;
+            }
+
+            &_desc {
+                font-family: 'Roboto';
+                font-size: 13px;
+                line-height: 18px;
+                letter-spacing: -0.1px;
+                color: $text-grey;
+            }
+        }
+    }
+
+    &__profile {
+        display: flex;
+        gap: 10px;
+
+        &_inner {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .container {
+        height: 100%;
+
+    &__wrapper {
+            display: block;
+        }
+    }
+
+    .form {
+        width: 80%;
+        margin: 40px auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .form {
+        &__ava__btns {
+            display: block;
+
+            &_trash {
+                margin-top: 10px;
+            }
+
+            &_desc {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .form {
+        &_title {
+            text-align: center;
+            font-size: 20px;
+            line-height: 22px;
+        }
+
+        &__name {
+            flex-direction: column;
+
+            &_inner {
+                width: 100%;
+            }
+        }
+
+        &__location {
+            flex-direction: column;
+
+            &_inner {
+                    width: 100%;
+            }
+        }
+
+        &__footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__profile {
+            flex-direction: column;
+            
+            &_inner {
+                width: 100%;
+            }
+        }
+
+        &__btn_update {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

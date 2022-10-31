@@ -1,0 +1,5 @@
+@mixin row-half {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
