@@ -1,0 +1,39 @@
+@mixin flex-ai-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-jc-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-jc-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin message-icon {
+    @include flex-center;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 5px;
+    left: 35px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: $text-dark-grey;
+    background-color: $green;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
