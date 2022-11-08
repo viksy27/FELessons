@@ -1,39 +1,34 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
-  font-family: 'Bebas Neue Book';
+  font-family: "Bebas Neue Book";
   src: url("./fonts/BebasNeueBook.woff2") format("woff2"), url("./fonts/BebasNeueBook.woff") format("woff");
   font-weight: normal;
   font-display: swap;
   text-transform: uppercase;
 }
-
 @font-face {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   src: url("./fonts/BebasNeue-Thin.woff2") format("woff2"), url("./fonts/BebasNeue-Thin.woff") format("woff");
   font-weight: 100;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   src: url("./fonts/BebasNeueRegular.woff2") format("woff2"), url("./fonts/BebasNeueRegular.woff") format("woff");
   font-weight: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   src: url("./fonts/BebasNeueLight.woff2") format("woff2"), url("./fonts/BebasNeueLight.woff") format("woff");
   font-weight: 300;
   font-display: swap;
 }
-
 li {
   list-style-type: none;
 }
@@ -41,15 +36,13 @@ li {
 body {
   height: 100%;
   background-color: #9789F9;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
 .container {
   width: 83.3%;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 2.5%;
   margin-top: 40px;
@@ -59,45 +52,38 @@ body {
 .card {
   width: 32.4%;
   background-color: #F5F3F9;
-  -webkit-transition: -webkit-transform .5s ease;
-  transition: -webkit-transform .5s ease;
-  transition: transform .5s ease;
-  transition: transform .5s ease, -webkit-transform .5s ease;
-  -webkit-transition: transform .5s ease;
-  -moz-transition: transform .5s ease;
-  -ms-transition: transform .5s ease;
-  -o-transition: transform .5s ease;
+  transition: transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  -ms-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
 }
-
 .card__pricing {
   text-align: center;
   position: relative;
 }
-
 .card__pricing__badge {
   position: absolute;
   right: 10px;
   top: 10px;
   opacity: 0;
-  transition: opacity .7s ease .5s;
-  -webkit-transition: opacity .7s ease .5s;
-  -moz-transition: opacity .7s ease .5s;
-  -ms-transition: opacity .7s ease .5s;
-  -o-transition: opacity .7s ease .5s;
+  transition: opacity 0.7s ease 0.5s;
+  -webkit-transition: opacity 0.7s ease 0.5s;
+  -moz-transition: opacity 0.7s ease 0.5s;
+  -ms-transition: opacity 0.7s ease 0.5s;
+  -o-transition: opacity 0.7s ease 0.5s;
 }
-
 .card__pricing__badge_message {
   position: absolute;
   left: 53px;
   top: 15px;
 }
-
 .card__pricing_price {
   display: inline-block;
   text-align: center;
   margin-bottom: 10px;
   padding-top: 30px;
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-weight: 100;
   font-size: 50px;
   line-height: 46px;
@@ -105,79 +91,58 @@ body {
   color: #000;
   position: relative;
 }
-
 .card__pricing_price--elem {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
   color: #181818;
   position: absolute;
 }
-
 .card__pricing_price--elem:first-child {
   left: -14px;
 }
-
 .card__pricing_price--elem:last-child {
   bottom: 0;
 }
-
 .card__pricing_desc {
   margin-bottom: 30px;
-  font-family: 'Bebas Neue Book';
+  font-family: "Bebas Neue Book";
   text-transform: uppercase;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.04em;
   color: #000;
 }
-
 .card__main {
   padding-top: 20px;
   background-image: url(card-bg.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .card__main_icon {
   margin-bottom: 20px;
 }
-
 .card__main__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 10px;
   margin-bottom: 60px;
 }
-
 .card__main__list_item {
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 0.04em;
   color: #000;
 }
-
 .card__span {
   position: absolute;
   bottom: 5px;
   left: 5px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 300;
   font-size: 11px;
   line-height: 18px;
@@ -185,7 +150,6 @@ body {
   color: #A9A9A9;
   display: none;
 }
-
 .card__button {
   display: block;
   margin: 0 auto 40px auto;
@@ -194,7 +158,7 @@ body {
   padding: 7px 50px;
   border: none;
   border-radius: 30px;
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   text-transform: uppercase;
   font-size: 18px;
   line-height: 18px;
@@ -206,10 +170,8 @@ body {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-  -webkit-transition: bottom .5s ease;
-  transition: bottom .5s ease;
+  transition: bottom 0.5s ease;
 }
-
 .card:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
@@ -217,17 +179,14 @@ body {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
-
 .card:hover .card__pricing__badge {
   opacity: 1;
 }
-
 .card:hover .card__button {
   cursor: pointer;
   bottom: 15px;
   background-color: #FD8D7B;
 }
-
 .card:hover .card__span {
   display: block;
 }
@@ -238,14 +197,11 @@ body {
     line-height: 10px;
   }
 }
-
 @media (max-width: 768px) {
   .container {
     width: 90%;
     margin: 0 auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .card__main__list {
     margin-right: 10px;
@@ -255,11 +211,9 @@ body {
     display: none;
   }
 }
-
 @media (max-width: 700px) {
   .container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -268,5 +222,4 @@ body {
     width: 90%;
     margin: 0 auto;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
