@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 .main {
-    height: 100vh;
+    height: 100%;
     padding: 20px;
-    background-image: url(bg.jpg);
-    background-position: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: rgb(250,70,252);
+    background: radial-gradient(circle, rgba(250,70,252,1) 0%, rgba(63,94,251,1) 100%);
 }
 
 .container {
@@ -20,7 +22,7 @@
 
 ul {
     border-radius: 5px;
-    background-color: rgba(0, 40, 33, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 li {
@@ -50,5 +52,9 @@ a {
     line-height: 12px;
     color: #ccc;
     text-decoration: none;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
 }
