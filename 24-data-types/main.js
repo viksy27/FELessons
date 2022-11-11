@@ -35,13 +35,11 @@ alert(`You can bye ${Math.floor(chocolateAmount)} chocolates, you have $${oddMon
 // Запитай у користувача тризначне число і виведи його задом наперед. Для вирішення завдання тобі знадобиться оператор % (залишок від ділення). (хз, як через %)
 
 let num7 = prompt('Enter a three-digit number');
-let num7reverse = num7.split('').reverse().join('');
-if (num7.length == 3) {
-    alert(`Reverse of your number ${num7reverse}`);
-} else {
-    prompt('Enter a three-digit number');
+while(num7.length != 3) {
+    num7 = prompt('Enter a three-digit number');
 }
-
+let num7reverse = num7.split('').reverse().join('');
+alert(`Reverse of your number ${num7reverse}`);
 
 //Користувач вводить суму вкладу в банк на 2 місяці, з процентною ставкою депозиту 5% річних. Вивести суму нарахованих відсотків.
 
