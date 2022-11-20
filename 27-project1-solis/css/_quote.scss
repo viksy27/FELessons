@@ -1,0 +1,71 @@
+.quote {
+    background-image: url(../images/quote.png);
+    background-repeat: no-repeat;
+    padding: 100px 30px 100px 160px;
+    position: relative;
+
+    &_text {
+        max-width: 710px;
+        margin-bottom: 40px;
+        color: $white;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 46px;
+        letter-spacing: 0.04em;
+        
+    }
+
+    &_cite {
+        font-family: 'Playfair Display';
+        font-style: italic;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.08em;
+        color: $white;
+    }
+
+    &_svg {
+        position: absolute;
+        content: '';
+        top: 70px;
+        left: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .quote {
+        padding: 50px 50px 50px 50px;
+
+        &_text {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        &_svg {
+            top: 10px;
+            left: 10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .quote_text {
+        font-size: 22px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .quote {
+        &_text {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        &_cite {
+            font-size: 12px;
+            line-height: 12px;
+        }
+    }
+}

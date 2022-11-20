@@ -1,0 +1,113 @@
+.sales {
+    width: 100%;
+    min-height: 670px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-image: url(../images/sales.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    position: relative;
+    z-index: -1;
+
+    &__info {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 45px;
+        bottom: 45px;
+        width: 100%;
+        max-width: 770px;
+        background-color: $white;
+        opacity: 0.9;
+
+        &__left {
+            width: 48%;
+            margin: 45px 0;
+            text-align: center;
+
+            &_statistic {
+                margin-bottom: 12px;
+                font-family: 'Playfair Display', sans-serif;
+                font-size: 68px;
+                line-height: 72px;
+                opacity: 1;
+            }
+
+            &_statistic--dollar {
+                margin-right: 10px;
+                font-size: 40px;
+                line-height: 50px;
+                color: $light-grey;
+            }
+
+            &--hr {
+                width: 27%;
+                height: 1px;
+                margin: 40px auto;
+                border-top: none; 
+                border-left: none;            
+                border-color: $green;
+            }
+        }
+
+        &__right {
+            width: 52%;
+            margin: 45px 0;
+
+            &_text {
+                margin-bottom: 50px;
+            }
+
+            &_text + .sales__info__right_text {
+                margin-top: 26px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sales {
+        &__info {
+            gap: 10px;
+
+            &__left {
+                width: 30%;
+
+                &_statistic {
+                    font-size: 34px;
+                    line-height: 36px;
+                }
+
+                &_statistic--dollar {
+                    margin-right: 10px;
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+            }
+
+            &__right {
+                width: 65%;
+            }
+
+            .sales__info__right_text {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .sales {
+        min-height: 600px;
+ 
+    }
+    .sales__info__left--hr {
+        margin: 15px auto;
+    }
+
+    .sales__info__right_text + .sales__info__right_text {
+        margin-top: 0;
+    }
+}

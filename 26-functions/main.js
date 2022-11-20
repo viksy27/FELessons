@@ -101,5 +101,3 @@ let check = 0;
         }  
     }
 isPerfect(6);
-
-

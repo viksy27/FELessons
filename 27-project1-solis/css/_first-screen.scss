@@ -1,0 +1,45 @@
+.first-screen {
+    max-width: 523px;
+    margin: 150px 0 150px 0;
+
+    &_title {
+        margin-bottom: 20px;
+        font-family: 'Playfair Display';
+        font-size: 44px;
+        font-weight: 400;
+        line-height: 118%;
+
+        &--italic {
+            font-style: italic;
+            color: $green;
+        }
+    }
+
+    &_text {
+        max-width: 439px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .first-screen {
+        margin: 100px 0 100px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .first-screen {
+        margin: 50px 0 50px 0;
+
+        &_title {
+            font-size: 30px;
+            max-width: 350px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .first-screen {
+        margin-bottom: 0;
+    }
+}

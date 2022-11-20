@@ -1,0 +1,46 @@
+.payments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 60px;
+
+    &__section {
+        width: 48.7%;
+        min-height: 250px;
+        padding: 20px 30px;
+
+        &_title {
+            max-width: 480px;
+        }
+
+        &_text {
+            max-width: 470px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .payments {
+        gap: 0;
+
+        &__section {
+            width: 100%;
+            min-height: 0;
+
+            &_title {
+                max-width: 100%;
+            }
+
+            &_text {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .payments__section {
+        padding: 10px 15px;
+        margin-bottom: 20px;
+    }
+}

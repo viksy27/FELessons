@@ -1,0 +1,95 @@
+.video {
+    &__tablet {
+        max-width: 970px;
+        height: 100%;
+        margin: 0 auto 50px auto;
+        padding: 30px 70px 30px 30px;
+        border: 1px solid $light-grey;
+        border-radius: 32px;
+        -webkit-border-radius: 32px;
+        -moz-border-radius: 32px;
+        -ms-border-radius: 32px;
+        -o-border-radius: 32px;
+        transition: border-color .3s ease;
+
+        &__box {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 13px;
+                height: 13px;
+                left: -22px;
+                top: 50%;                
+                border: 1px solid $light-grey;
+                border-radius: 32px;
+                -webkit-border-radius: 32px;
+                -moz-border-radius: 32px;
+                -ms-border-radius: 32px;
+                -o-border-radius: 32px;
+                transform: translate(0, -50%);
+                -webkit-transform:translate(0,-50%);
+                -moz-transform:translate(0,-50%);
+                -ms-transform:translate(0,-50%);
+                -o-transform:translate(0,-50%);
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 35px;
+                height: 35px;
+                right: -56px;
+                top: 50%;
+                border: 1px solid $light-grey;
+                border-radius: 32px;
+                -webkit-border-radius: 32px;
+                -moz-border-radius: 32px;
+                -ms-border-radius: 32px;
+                -o-border-radius: 32px;
+                transform: translate(0, -50%);
+            }
+
+            &_video {
+                border-radius: 8px;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                -ms-border-radius: 8px;
+                -o-border-radius: 8px;
+            }
+        }
+
+        &:hover {
+            border-color: $coral-dark;
+        }
+    }
+
+    &__desc {
+        max-width: 970px;
+        margin: 0 auto;
+
+        .title {
+            margin-bottom: 20px;
+        }
+
+        &_text {
+            max-width: 810px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .video__tablet {
+        padding: 0;
+        border: none;
+
+        &__box::before {
+            display: none;
+        }
+
+        &__box::after {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    padding-top: 60px;
+    border-top: 1px solid $light-grey;
+
+    &__left {
+        .title {
+            line-height: 98%;
+            margin-bottom: 30px;
+        }
+
+        &_text {
+            max-width: 470px;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        width: 40.1%;
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 100%;
+
+            &_input {
+                padding-bottom: 12px;
+                border: none;
+                border-bottom: 1px solid $light-grey;
+                outline: none;
+                font-family: 'Playfair Display';
+                font-style: italic;
+                font-size: 18px;
+                line-height: 20px;
+                letter-spacing: 0.08em;
+                color: $general-text;
+
+                &:focus {
+                    border-bottom: 1px solid $coral-dark;
+                }
+            }
+
+            &_btn {
+                width: 36.8%;
+                border: none;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .contact {
+        gap: 20px;  
+
+        &__left {
+            width: 50%;
+        }
+
+        &__right {
+            width: 50%;
+
+            &__form_btn {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+        &__left {
+            width: 100%;
+            text-align: center;
+
+            &_text {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        &__right {
+            width: 75%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .contact__right__form {
+        gap: 20px;
+
+        &_input {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}

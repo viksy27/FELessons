@@ -1,0 +1,150 @@
+@import '_variables';
+@import '_mixins';
+@import '_header';
+@import '_first-screen';
+@import '_sales';
+@import '_payments';
+@import '_quote';
+@import '_video';
+@import '_promises';
+@import '_reviews';
+@import '_contact';
+@import '_footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-size: 10px;
+    line-height: 10px;
+    color: $general-text;
+    width: 100%;
+    min-width: 320px;
+    font-family: 'Lato', sans-serif;
+    background-image: url(../images/first-screen-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 100%;
+    opacity: 0.99;
+}
+
+a {
+    text-decoration: none;
+    color: $general-text;
+}
+
+button {
+    cursor: pointer;
+    z-index: -1;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    @include container;
+}
+
+.text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0.8;
+}
+
+.btn { 
+    border: none;
+    background-color: transparent;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $coral;
+    position: relative;
+    transition: color .3s ease;
+
+    &:after {
+        content: '';
+        position: absolute;
+        height: 13px;
+        left: 10px;
+        right: -7px;
+        bottom: -4px;
+        background-color: $coral;
+        opacity: 0.3;
+        transition: background-color .3s ease;
+    }
+
+    &:hover {
+        color: $coral-dark;
+    }
+
+    &:hover::after {
+        background-color: $coral-dark;
+    }
+}
+
+.block {
+    margin-bottom: 120px;
+}
+
+.title {
+    margin-bottom: 30px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: $general-text;
+
+    &--italic {
+        font-style: italic;
+        font-size: 40px;
+        line-height: 48px;
+        color: $green;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        @include container1280;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        @include container600;
+    }
+
+    .block {
+        margin-bottom: 60px;
+    }
+
+    .title {
+        font-size: 22px;
+        line-height: 22px;
+        margin-bottom: 10px;
+
+        &--italic {
+            font-size: 22px;
+            line-height: 22px;
+        }
+    }
+
+    .text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}

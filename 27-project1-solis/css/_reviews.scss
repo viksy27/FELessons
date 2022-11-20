@@ -1,0 +1,83 @@
+.reviews {
+    margin-bottom: 100px;
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    &_text {
+        max-width: 400px;
+        margin-bottom: 50px;
+    }
+
+    &__section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: 370px;
+            min-height: 340px;
+            padding: 30px 40px;
+            color: $white;
+
+            &_quote {
+                font-size: 16px;
+                line-height: 26px;
+                opacity: 0.8;
+            }
+
+            &_cite {
+                font-family: 'Playfair Display';
+                font-style: italic;
+                font-size: 20px;
+                line-height: 20px;
+                letter-spacing: 0.08em;
+            }
+
+            &--bg1{
+                background-image: url(../images/review1.png);
+                background-repeat: no-repeat;
+            }
+
+            &--bg2 {
+                background-image: url(../images/review2.png);
+                background-repeat: no-repeat;
+            }
+
+            &--bg3 {
+                background-image: url(../images/review3.png);
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+@media (max-width: 1230px) {
+    .reviews__section {
+        width: 100%;
+        gap: 15px;
+
+        &__item {
+            max-width: 1170px;
+            text-align: center;
+            background-size: cover;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .reviews {
+        &__section__item_quote {
+            line-height: 20px;
+        }
+
+        &__section__item_cite {
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+}

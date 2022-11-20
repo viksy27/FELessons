@@ -1,0 +1,154 @@
+.header {
+    width: 100%;
+    margin-top: 30px;
+    padding: 24px 0;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(4.5px);
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        &__list {
+            display: flex;
+            gap: 30px;
+
+            &__item {
+                position: relative;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: -3px;
+                    left: 0;
+                    right: 0;
+                    height: 3px;
+                    background-color: $coral;
+                    opacity: 0;
+                    transition: opacity .3s linear;
+                    -webkit-transition: opacity .3s linear;
+                    -moz-transition: opacity .3s linear;
+                    -ms-transition: opacity .3s linear;
+                    -o-transition: opacity .3s linear;
+                }
+                
+                &:hover::after {
+                    opacity: 1;
+                }
+
+                &_link { 
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0.08em;
+
+                    &:active {
+                        color: $coral;
+                    }
+                }
+            }
+        }
+    }
+
+    &__burger {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .body.lock {
+        overflow: hidden;
+    }
+
+    .header {
+        &__burger {
+            display: block;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            z-index: 55;
+            cursor: pointer;
+            overflow: hidden;
+    
+            &_item {
+                width: 30px;
+                height: 2px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: $general-text;
+                transition: all 0.5s;
+    
+                &:nth-of-type(2) {
+                    top: calc(50% - 5px);
+                }
+    
+                &:nth-of-type(3) {
+                    top: calc(50% + 5px);
+                }
+            }
+        }
+    }
+
+    .header__burger.active .header__burger_item:nth-of-type(1) {
+        display: none;
+    }
+
+    .header__burger.active .header__burger_item:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);
+        background-color: $white;
+    }
+
+    .header__burger.active .header__burger_item:nth-of-type(3) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg);
+        background-color: $white;
+    }
+    
+    .header__nav__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: -32px;
+        left: 0;
+        z-index: 50;
+        width: 100%;
+        height: 100vh;
+        padding: 15px;
+        background: $general-text;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease;
+        opacity: 0;
+        -webkit-transition: transform 0.5s ease;
+        -moz-transition: transform 0.5s ease;
+        -ms-transition: transform 0.5s ease;
+        -o-transition: transform 0.5s ease;
+
+        &__item{
+            &_link {
+                color: $white;
+                font-size: 25px;
+            }
+
+            &::after {
+                bottom: -10px;
+            }
+        }
+    }
+
+    .header__nav__list.active {
+        transform: translateX(0);
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        overflow: auto;
+    }
+}
