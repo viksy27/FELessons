@@ -4,15 +4,11 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-}
-
 .main {
     height: 100%;
     padding: 20px;
-    background: rgba(76, 21, 87, 0.727);
-    background: radial-gradient(circle, rgba(76, 21, 87, 0.727) 0%,rgb(0, 0, 0)) 100%;
+    background: rgb(0, 0, 0);
+    /* background: radial-gradient(circle, rgba(76, 21, 87, 0.727) 0%,rgb(0, 0, 0)) 100%; */
 }
 
 .container {
@@ -22,7 +18,7 @@ html, body {
 
 ul {
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(46, 46, 46, 0.653);
 }
 
 li {
@@ -34,7 +30,7 @@ li {
 }
 
 li:hover a {
-    color: #fff;
+    color: rgb(255, 0, 251);
     font-size: 14px;
     padding: 0;
     border: none;
