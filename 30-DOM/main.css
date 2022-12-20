@@ -1,0 +1,145 @@
+body {
+    background-color: #ffe4fb;
+    font-family: 'Montserrat', sans-serif;
+ }
+
+.myBtn {
+    display: block;
+    margin: calc(50vh - 26px) auto;
+    padding: 15px 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(255, 177, 255);
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    -ms-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+}
+
+.myBtn:hover {
+    background-color:rgb(255, 114, 185);
+}
+
+.myBtn-link {
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.myBtn-link:hover {
+    background-color: rgb(255, 114, 185);
+}
+
+.myBtn + .myBtn {
+    margin-top: 30px;
+}
+ 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0, 0.5);
+} 
+
+.modal-content {
+    background-color: rgb(255, 114, 185);
+    margin: 20% auto;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 60%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: 600;
+    cursor:  pointer;
+}
+
+.song {
+    font-size: 22px;
+    color: #fff;
+    padding: 5px;
+}
+
+/*---------------------------------------TRAFFIC LIGHT---------------------------------------*/
+
+.traffic-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px calc(50vw - 75px) 100px;
+    padding: 30px;
+    background-color: rgb(180, 180, 180);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.light {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    opacity: 0.3;
+}
+
+.light + .light {
+    margin-top: 15px;
+}
+
+.red {
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0 0 25px red;
+}
+
+.yellow {
+    background-color: rgb(255, 255, 0);
+    box-shadow: 0 0 25px yellow;
+}
+
+.green {
+    background-color: rgb(0, 128, 0);
+    box-shadow: 0 0 25px green;
+}
+
+.active {
+    opacity: 1;
+}
+
+.colorBtn {
+    margin: 0 auto;
+}
+
+.back {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    border: none;
+}
