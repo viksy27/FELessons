@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    color: #c5c5c5;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-color: #000;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+caption {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    font-family: sans-serif;
+    max-width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: rgba(63, 63, 63, 0.8);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+th {
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    -ms-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+th:hover {
+    background-color: rgba(255, 175, 215, 0.336);
+    color: rgb(255, 255, 255);
+}
+
+a {
+    display: block;
+    max-width: 94px;
+    margin: 0 auto 10px auto;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-family: sans-serif;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    -ms-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+}
+
+a:hover {
+    background-color: rgb(255, 175, 215);
+    border-color: rgb(255, 175, 215);
+    color: #000;
+}
+

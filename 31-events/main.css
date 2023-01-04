@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    background-color: rgb(63, 63, 63);
+}
+
+a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+a:focus,
+a:hover {
+    color: rgb(255, 175, 215);
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 200px;
+}

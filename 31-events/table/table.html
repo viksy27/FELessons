@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="table.css">
+    <title>Table sort</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h2>Click on the column name to sort</h2>
+        <table id="table">
+            <caption>Engines and driveline</caption>
+            <thead>
+                <tr>
+                    <th data-type="id">model</th>
+                    <th data-type="id">engine displacement</th>
+                    <th data-type="text">engine configuration, (ID codes) aspiration, fuel system</th>
+                    <th data-type="id">Max rated power at rpm (Directive 80/1269/EEC)</th>
+                    <th data-type="id">max. torque at rpm</th>
+                    <th data-type="id">from years</th>
+                    <th data-type="text">drivetrain</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.8 TFSI</td>
+                    <td>1,798 cc (109.7 cu in)</td>
+                    <td>Inline-4 16v DOHC (EA888) Turbocharger, Fuel Stratified Injection</td>
+                    <td>118 kW (160 PS; 158 bhp) at 4,500–6,200</td>
+                    <td>250 N⋅m (184 lbf⋅ft) at 1,500–4,500</td>
+                    <td>2007</td>
+                    <td>FWD</td>
+                </tr>
+                <tr>
+                    <td>2.0 TFSI</td>
+                    <td>1,984 cc (121.1 cu in)</td>
+                    <td>Inline-4 16v DOHC (AXX, BWA, BPY) Turbocharger, Fuel Stratified Injection</td>
+                    <td>147 kW (200 PS; 197 bhp)
+                        at 5,100–6,000</td>
+                    <td>280 N⋅m (207 lbf⋅ft)
+                        at 1,800–5,000</td>
+                    <td>2006</td>
+                    <td>FWD, quattro 4WD</td>
+                </tr>
+                <tr>
+                    <td>2.0 TFSI</td>
+                    <td>1,984 cc (121.1 cu in) </td>
+                    <td>Inline-4 16v DOHC Turbocharger, Fuel Stratified Injection</td>
+                    <td>155 kW (211 PS; 208 bhp) at 5,300–6,000</td>
+                    <td>280 N⋅m (207 lbf⋅ft) at 1,700–5,000</td>
+                    <td>2008</td>
+                    <td>FWD, quattro 4WD</td>
+                </tr>
+                <tr>
+                    <td>2.0 TFSI</td>
+                    <td>1,984 cc (121.1 cu in)</td>
+                    <td>Inline-4 16v DOHC (EA888) at 4,300–6,000</td>
+                    <td>155 kW (211 PS; 208 bhp) at 4,300–6,000</td>
+                    <td>350 N⋅m (258 lbf⋅ft) at 1,600–4,200</td>
+                    <td>2010</td>
+                    <td>FWD, quattro 4WD</td>
+                </tr>
+                <tr>
+                    <td>3.2 V6 quattro</td>
+                    <td>3,189 cc (194.6 cu in)</td>
+                    <td>VR6 24v DOHC (BUB) multi-point sequential indirect fuel injection</td>
+                    <td>184 kW (250 PS; 247 bhp) at 6,300</td>
+                    <td>320 N⋅m (236 lbf⋅ft) at 2,500–3,000</td>
+                    <td>2006</td>
+                    <td>quattro 4WD</td>
+                </tr>
+                <tr>
+                    <td>2.0 TFSI (TTS quattro)</td>
+                    <td>1,984 cc (121.1 cu in)</td>
+                    <td>Inline-4 16v DOHC (EA113: CDL) Turbocharger, Fuel Stratified Injection</td>
+                    <td>200 kW (272 PS; 268 bhp) at 6,000</td>
+                    <td>350 N⋅m (258 lbf⋅ft) at 2,500–5,000</td>
+                    <td>2008</td>
+                    <td>quattro 4WD</td>
+                </tr>
+                <tr>
+                    <td>2.5 R5 TFSI (TT RS)</td>
+                    <td>2,480 cc (151.3 cu in)</td>
+                    <td>Inline-5 20v DOHC (CEPA) Turbocharger, Fuel Stratified Injection</td>
+                    <td>250 kW (340 PS; 335 bhp) at 5,400–6,500</td>
+                    <td>450 N⋅m (332 lbf⋅ft) at 1,600–5,300</td>
+                    <td>2009</td>
+                    <td>quattro 4WD</td>
+                </tr>
+                <tr>
+                    <td>2.5 R5 TFSI (TT RS plus)</td>
+                    <td>2,480 cc (151.3 cu in)</td>
+                    <td>Inline-5 20v DOHC (CEPB) Turbocharger, Fuel Stratified Injection</td>
+                    <td>265 kW (360 PS; 355 bhp) at 5,400–6,500</td>
+                    <td>465 N⋅m (343 lbf⋅ft) at 1,600–5,300</td>
+                    <td>2012</td>
+                    <td>quattro 4WD</td>
+                </tr>
+                <tr>
+                    <td>2.0 TDI quattro</td>
+                    <td>1,968 cc (120.1 cu in)</td>
+                    <td>Inline-4 16v DOHC Turbocharged Direct Injection (TDI) CR</td>
+                    <td>125 kW (170 PS; 168 bhp) at 4,200</td>
+                    <td>350 N⋅m (258 lbf⋅ft) at 1,750–2,500</td>
+                    <td>2008</td>
+                    <td>quattro 4WD</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="../index.html">Back</a>
+    </main>
+    <footer></footer>
+
+    <script src="table.js"></script>
+</body>
+</html>
