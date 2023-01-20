@@ -1,0 +1,160 @@
+@import '_variables';
+@import '_mixins';
+@import '_header';
+@import '_first-screen';
+@import '_products';
+@import '_partners';
+@import '_footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body, html {
+    min-width: 320px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main {
+    color: $black;
+}
+
+.block {
+    padding: 70px 0;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn {
+    padding: 15px 57px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+        &:hover{
+        background-color: $tomato-light;
+        border-color: $tomato-light;
+        color: $white;
+    }
+}
+
+.slick-track {
+    display: flex;
+    min-width: 0;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-arrow {
+    font-size: 0;
+    padding: 37px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+    background-color: $tomato-light;
+}
+
+@media (max-width: 1366px) {
+    .block {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .block {
+        padding-right: 55px;
+        padding-left: 55px;
+    }
+
+    .slick-arrow {
+        padding: 15px 8px;
+    }
+}
+
+@media(max-width: 768px) {
+    .block {
+        padding: 50px 15px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    .block {
+        padding-right: 10px;
+        padding-left: 10px;
+
+        &:nth-child(3) {
+            padding-bottom: 82px;
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        gap: 12px;
+        position: absolute;
+        left: 50%;
+        bottom: -32px;
+        margin-left: -60px;
+    }
+
+    .slick-dots button {
+        width: 12px;
+        height: 12px;
+        font-size: 0;
+        cursor: pointer;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border: none;
+        background-color: $dot-inactive;
+    }
+}
+
+
+
+// html, body {          ----------------    для центрироывния задач
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100%;
+// }

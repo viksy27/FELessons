@@ -1,0 +1,190 @@
+.footer {
+    padding-bottom: 20px;
+    background-color: $brown-dark;
+
+    &_container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1142px;
+        margin: 0 auto;
+    }
+    
+    &__logo__link_item {
+        margin-bottom: 35px;
+        fill: $brown-light;
+        transition: fill .3s ease;
+        -webkit-transition: fill .3s ease;
+        -moz-transition: fill .3s ease;
+        -ms-transition: fill .3s ease;
+        -o-transition: fill .3s ease;
+
+        &:hover {
+            fill: $tomato-light;
+        }
+    }
+
+    &__nav {
+        &__list {
+            &__item {
+                &_link {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: $brown-light;
+                    transition: color .3s ease;
+                    -webkit-transition: color .3s ease;
+                    -moz-transition: color .3s ease;
+                    -ms-transition: color .3s ease;
+                    -o-transition: color .3s ease;
+
+                    &:hover {
+                        color: $tomato-light;
+                    }
+                }
+
+                & + & {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    &__contacts {
+        &_title {
+            margin-bottom: 48px;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 32px;
+            color: $brown-light;
+        }
+
+        &__socials {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 32px;
+            cursor: pointer;
+
+            &_icon {
+                display: inline-flex;
+                justify-content: flex-start;
+                height: 30px;
+                fill: $brown-light;
+                transition: all .3s ease;
+                -webkit-transition: all .3s ease;
+                -moz-transition: all .3s ease;
+                -ms-transition: all .3s ease;
+                -o-transition: all .3s ease;
+        
+                &:hover {
+                    fill: $tomato-light;
+                }
+        
+                &--stroke {
+                    stroke: $brown-light;
+                    transition: all .3s ease;
+                    -webkit-transition: all .3s ease;
+                    -moz-transition: all .3s ease;
+                    -ms-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+        
+                    &:hover {
+                        stroke: $tomato-light;
+                    }
+                }
+            }
+        }
+
+        &_tel {
+            font-size: 26px;
+            line-height: 32px;
+            color: $brown-light;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &_copy {
+        font-size: 14px;
+        line-height: 17px;
+        color: $brown-light;
+        text-align: center;
+    }
+}
+
+@media(max-width: 768px) {
+    .footer {
+        &__left {
+            display: flex;
+            gap: 125px;
+        }
+
+        &__nav__list__item_link {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &__contacts{
+            &_title {
+                margin-bottom: 22px;
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            &__socials {
+                display: flex;
+                justify-content: space-between;
+                gap: 0;
+                margin-bottom: 27px;
+
+                &_icon, .footer__contacts__socials_icon--stroke {
+                    height: 20px;
+                    max-width: 27px;
+                }
+            }
+
+            &_tel {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .footer {
+        padding-bottom: 30px;
+
+        &_container {
+            position: relative;
+        }
+        &__left {
+            gap: 0;
+        }
+
+        &__nav__list {
+            margin-top: 70px;
+        }
+  
+        &__logo__link_item {
+            position: absolute;
+            left: 50%;
+            margin-left: -75px;
+        }
+
+        &__contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            &_title {
+                margin-top: 70px;
+            }
+
+            &__socials {
+                gap: 20px;
+            }
+        }
+    }
+}
