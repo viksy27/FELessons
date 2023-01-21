@@ -1,5 +1,4 @@
 @import '_variables';
-@import '_mixins';
 @import '_header';
 @import '_first-screen';
 @import '_products';
@@ -149,12 +148,3 @@ li {
         background-color: $dot-inactive;
     }
 }
-
-
-
-// html, body {          ----------------    для центрироывния задач
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     height: 100%;
-// }

@@ -5,10 +5,13 @@
 }
 
 .main {
-    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
     padding: 20px;
     background: rgb(0, 0, 0);
-    /* background: radial-gradient(circle, rgba(76, 21, 87, 0.727) 0%,rgb(0, 0, 0)) 100%; */
+    background: radial-gradient(circle, rgb(36, 2, 43) 0%,rgb(0, 0, 0)) 100%;
 }
 
 .container {

@@ -119,7 +119,7 @@ $(document).ready(function(){
                 initialSlide: 1
             }
         }, {
-            breakpoint: 400,
+            breakpoint: 401,
             settings: {
                 arrows: false,
                 dots: true,
