@@ -133,7 +133,7 @@ function showFilmDetails(e) {
     myModal.style.display = "block"
 
     axios({
-        url: `http://www.omdbapi.com/?i=${filmId}&apikey=bf1e2bb3`,
+        url: `https://www.omdbapi.com/?i=${filmId}&apikey=bf1e2bb3`,
         method: 'GET',
         params: {
             plot: 'full'
