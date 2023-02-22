@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>My first API</title>
+</head>
+<body>
+    <main>
+        <form 
+            action="http://www.omdbapi.com/?i=tt3896198&apikey=bf1e2bb3" 
+            method="GET" 
+            autocomplete="off"
+            id="search-form"
+            class="search-form"
+        >
+            <input
+                name="title" 
+                type="search" 
+                placeholder="Enter film name here"
+                class="input">
+            <select name="type" class="input__select">
+                <option value="movie">movie</option>
+                <option value="series">series</option>
+                <option value="episode">episode</option>
+            </select>
+            <button type="submit"  class="input__select input__btn">
+                Search
+            </button>
+        </form>
+
+        <div id="search-results" class="search-results"></div>
+
+        <ul id="search-pagination" class="search-pagination"></ul>
+
+         <div id="myModal" class="modal">
+            <span id="close" class="close">&times;</span>
+            <div class="modal-content" id="modal-content"></div>
+        </div> 
+    </main>
+
+    <!-- http://www.omdbapi.com/?i=tt3896198&apikey=bf1e2bb3 -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
